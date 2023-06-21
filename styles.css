@@ -1,0 +1,368 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding-right: 20px;
+
+}
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drapeau {
+    margin-left: 10px;
+}
+
+.drapeauImage {
+    width: 30px;
+    height: 30px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    color: #ffca28;
+}
+/* CSS pour créer deux colonnes centrées avec l'image à droite et le texte à gauche */
+section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.profile-picture {
+    width: auto;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+small{
+    font-size: 8px;
+}
+#myH1 {
+    margin: 0;
+    font-size: 32px;
+    color: #fff;
+}
+
+h1 {
+    font-size: 43px;
+    text-align: center;
+    margin-top: 5px;
+    font-family: "CustomFont", sans-serif;
+}
+
+h2 {
+    text-align: center;
+
+    margin-bottom: 12px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 90px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #ffca28;
+}
+
+header div h1 {
+    text-align: center;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffca28;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left center;
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* Main */
+main {
+    padding: 20px;
+    margin-top: 110px;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.subtitle {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-line {
+    margin: 5px 10px;
+}
+
+footer p,
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #ffca28;
+}
+
+footer p{
+    font-size: 11px;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+    position: relative;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ffca28;
+}
+
+footer ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffca28;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left center;
+}
+
+footer ul li:hover::after {
+    transform: scaleX(1);
+}
+
+p{
+    margin-bottom: 10px;
+    text-align: left;
+}
+h2{
+    text-align: center;
+}
+
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Définissez la largeur maximale souhaitée */
+    height: 300px; /* Définissez la hauteur souhaitée */
+    margin: 0 auto; /* Centre le carrousel horizontalement */
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Empêche les images de se déformer */
+    transition: transform 0.5s;
+}
+
+.carousel:hover img {
+    transform: scale(1.1);
+}
+
+#stage {
+    align-items: center;
+}
+
+#stage .content {
+    flex: 1;
+}
+
+#presentation img {
+    max-width: 600px;
+    height: 300px; /* Définissez la hauteur maximale souhaitée */
+    width: auto;
+    margin: 0 auto;
+}
+
+#presentation {
+    align-items: center;
+}
+
+#presentation .content {
+    flex: 1;
+}
+#stage video {
+    max-width: 600px;
+    height: 300px; /* Définissez la hauteur maximale souhaitée */
+    width: 100%;
+
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.paragraphe{
+    margin-left: 2em;
+    text-align: justify;
+}
+
+.intitule{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.annee{
+
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+.images3 {
+    display: flex; /* Active le modèle de boîte flexible */
+    flex-wrap: nowrap;
+}
+.Image2 {
+    height: 160px;
+    width: auto;
+    object-fit: contain;
+    display: block; /* Convertit l'image en élément de type bloc */
+    margin-left: auto; /* Définit la marge gauche automatique */
+    margin-right: auto;
+}
+.Image1 {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+}
+
+#animated-title {
+    visibility: hidden;
+    display: inline-block;
+}
+
+.texte4,
+.RechercheStage,
+.title{
+    text-decoration: underline;
+    font-size: 1.7em;
+}
+.title2{
+    font-size: 1.5em;
+    color: #ffca28;
+}
+
+.experience{
+    margin-top: 90px;
+}
