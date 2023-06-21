@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var entryElement = document.getElementById("entry");
                 entryElement.addEventListener("click", function() {
                     this.classList.add("hidden");
-                    window.location.href = "index.html";
+                    window.location.href = "pageAcceuil.html";
                 });
 
                 var imageElement = document.querySelector("#entry img");
