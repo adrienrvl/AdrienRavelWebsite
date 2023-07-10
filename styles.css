@@ -4,7 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+@media (min-width: 601px) {
+    .mobile-header {
+        display: none;
+    }
+}
 /* Styles généraux */
 body {
     font-family: Arial, sans-serif;
@@ -370,7 +374,9 @@ h2{
 /* Styles spécifiques pour les appareils mobiles */
 @media (max-width: 600px) {
     /* Modifier les styles pour les appareils mobiles ici */
-
+    .normal-header {
+        display: none;
+    }
     header {
         padding: 10px;
     }
@@ -443,7 +449,11 @@ h2{
         max-width: 300px;
         height: 150px;
     }
-
+    #presentation img,
+    #stage video {
+        max-width: 300px;
+        height: 150px;
+    }
     #presentation img,
     #stage video {
         max-width: 300px;
