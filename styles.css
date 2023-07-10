@@ -377,9 +377,59 @@ h2{
     .normal-header {
         display: none;
     }
-    header {
-        padding: 10px;
+    @media (max-width: 600px) {
+        /* Modifier les styles pour les appareils mobiles ici */
+        .mobile-header .menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            width: 100%;
+            padding: 10px;
+            list-style: none;
+            text-align: center;
+        }
+
+        .mobile-header .menu li {
+            margin-bottom: 10px;
+        }
+
+        .mobile-header #menu-toggle:checked ~ .menu {
+            display: block;
+        }
+
+        .mobile-header nav label {
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .mobile-header nav ul {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-header nav ul li {
+            display: block;
+        }
+
+        .mobile-header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 0;
+            display: block;
+        }
+
+        .mobile-header nav ul li a:hover {
+            color: #ffca28;
+        }
     }
+
 
     .profile-picture {
         height: 50px;
