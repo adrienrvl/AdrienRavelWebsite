@@ -366,3 +366,64 @@ h2{
 .experience{
     margin-top: 90px;
 }
+
+/* Styles spécifiques pour les appareils mobiles */
+@media (max-width: 600px) {
+    /* Modifier les styles pour les appareils mobiles ici */
+
+    header {
+        padding: 10px;
+    }
+
+    .profile-picture {
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    small {
+        font-size: 6px;
+    }
+
+    nav ul li {
+        margin-right: 50px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .carousel {
+        max-width: 300px;
+        height: 150px;
+    }
+
+    #presentation img,
+    #stage video {
+        max-width: 300px;
+        height: 150px;
+    }
+
+    p,
+    .subtitle,
+    .intitule,
+    .annee,
+    .paragraphe,
+    .contact-item {
+        font-size: 12px;
+    }
+
+    .texte4,
+    .RechercheStage,
+    .title {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
