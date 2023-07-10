@@ -385,8 +385,50 @@ h2{
         font-size: 6px;
     }
 
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
     nav ul li {
-        margin-right: 50px;
+        position: relative;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    nav ul li a:hover {
+        color: #ffca28;
+    }
+
+    nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        z-index: 999;
+    }
+
+    nav ul ul li {
+        width: 100%;
+    }
+
+    nav ul li:hover > ul {
+        display: block;
     }
 
     h1 {
