@@ -71,6 +71,8 @@ section {
     text-align: center;
 }
 
+
+
 img {
     max-width: 100%;
     height: auto;
@@ -332,6 +334,7 @@ h2{
 .images {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .images3 {
     display: flex; /* Active le modèle de boîte flexible */
@@ -371,161 +374,110 @@ h2{
     margin-top: 90px;
 }
 
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.icon-bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.navbar-dropdown {
+    display: none;
+    list-style-type: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.navbar-dropdown.active {
+    display: block;
+}
+
 /* Styles spécifiques pour les appareils mobiles */
-@media (max-width: 600px) {
-    /* Modifier les styles pour les appareils mobiles ici */
-    .normal-header {
+@media only screen and (max-width: 600px) {
+    .navbar-links {
         display: none;
     }
-    @media (max-width: 600px) {
-        /* Modifier les styles pour les appareils mobiles ici */
-        .mobile-header .menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #333;
-            width: 100%;
-            padding: 10px;
-            list-style: none;
-            text-align: center;
-        }
-
-        .mobile-header .menu li {
-            margin-bottom: 10px;
-        }
-
-        .mobile-header #menu-toggle:checked ~ .menu {
-            display: block;
-        }
-
-        .mobile-header nav label {
-            color: #fff;
-            font-size: 24px;
-            cursor: pointer;
-            display: inline-block;
-        }
-
-        .mobile-header nav ul {
-            display: none;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .mobile-header nav ul li {
-            display: block;
-        }
-
-        .mobile-header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            padding: 5px 0;
-            display: block;
-        }
-
-        .mobile-header nav ul li a:hover {
-            color: #ffca28;
-        }
-    }
-
-
-    .profile-picture {
-        height: 50px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    small {
-        font-size: 6px;
-    }
-
-    nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-grow: 1;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-    }
-
-    nav ul li {
-        position: relative;
-    }
-
-    nav ul li a {
-        color: #fff;
-        text-decoration: none;
-        transition: color 0.3s;
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    nav ul li a:hover {
-        color: #ffca28;
-    }
-
-    nav ul ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        z-index: 999;
-    }
-
-    nav ul ul li {
-        width: 100%;
-    }
-
-    nav ul li:hover > ul {
+    .navbar-toggle {
         display: block;
     }
+}
+.images video,
+.images img{
+    align-items: center;
+    width: 40%;
+}
+.wulliIMG{
+    width: 10%;
+}
 
-    h1 {
-        font-size: 32px;
-    }
+.progress-bar {
+    width: 200px;
+    height: 10px;
+    background-color: #ccc;
+    margin-bottom: 5px;
+}
 
-    h2 {
-        font-size: 24px;
-    }
+.progress {
+    height: 100%;
+    background-color: #ffca28;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
 
-    .carousel {
-        max-width: 300px;
-        height: 150px;
-    }
-    #presentation img,
-    #stage video {
-        max-width: 300px;
-        height: 150px;
-    }
-    #presentation img,
-    #stage video {
-        max-width: 300px;
-        height: 150px;
-    }
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 
-    p,
-    .subtitle,
-    .intitule,
-    .annee,
-    .paragraphe,
-    .contact-item {
-        font-size: 12px;
-    }
+.language {
+    font-weight: bold;
+    margin-right: 10px;
+}
 
-    .texte4,
-    .RechercheStage,
-    .title {
-        font-size: 16px;
-    }
+.percentage {
+    margin-left: 5px;
+    font-weight: bold;
+}
 
-    .footer-content {
-        flex-direction: column;
-    }
+.progress-80 {
+    width: 80%;
+}
+.progress-100 {
+    width: 100%;
+}
+
+.progress-30 {
+    width: 30%;
+}
+
+.progress-60 {
+    width: 60%;
+}
+
+.progress-70 {
+    width: 70%;
+}
+
+section div h3{
+    color: #ffca28;
+
+}
+
+.section2 {
+    text-align: center;
+    display: flex;
+}
+
+.glue{
+    padding: 10px;
+}
+
+.images {
+    text-align: center;
 }

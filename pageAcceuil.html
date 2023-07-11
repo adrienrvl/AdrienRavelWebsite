@@ -7,16 +7,30 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/pp.jpg">
     <script src="script.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-66CTB26NJ6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-66CTB26NJ6');
+    </script>
 
 </head>
 <body>
-<header class="normal-header">
+<header >
     <div class="left-section">
         <a href="pageAcceuil.html"><img class="profile-picture" src="images/Capture-removebg-preview.png" alt="Photo de profil"></a>
         <small>ADRIEN RAVEL</small>
     </div>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <div class="navbar-toggle">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </div>
+        <ul class="navbar-links">
             <li><a href="pageAcceuil.html">ACCEUIL</a></li>
             <li><a href="formation.html">FORMATIONS</a></li>
             <li><a href="experiences.html">EXPERIENCES</a></li>
@@ -26,27 +40,16 @@
         </ul>
     </nav>
     <a class="drapeau" href="indexEnglish.html"><img class="drapeauImage" src="images/en-flag.png" alt="Français" /></a>
+    <ul class="navbar-dropdown">
+        <br><br><br><br><br><br>
+        <li><a href="pageAcceuil.html">ACCEUIL</a></li>
+        <li><a href="formation.html">FORMATIONS</a></li>
+        <li><a href="experiences.html">EXPERIENCES</a></li>
+        <li><a href="projets.html">PROJETS</a></li>
+        <li><a href="skills.html">COMPETENCES</a></li>
+        <li><a href="interets.html">CENTRE D'INTERET</a></li>
+    </ul>
 </header>
-<header class="mobile-header">
-    <div class="left-section">
-        <a href="pageAcceuil.html"><img class="profile-picture" src="images/Capture-removebg-preview.png" alt="Photo de profil"></a>
-        <small>ADRIEN RAVEL</small>
-    </div>
-    <nav>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle">&#9776;</label>
-        <ul class="menu">
-            <li><a href="pageAcceuil.html">ACCEUIL</a></li>
-            <li><a href="formation.html">FORMATIONS</a></li>
-            <li><a href="experiences.html">EXPERIENCES</a></li>
-            <li><a href="projets.html">PROJETS</a></li>
-            <li><a href="skills.html">COMPETENCES</a></li>
-            <li><a href="interets.html">CENTRE D'INTERET</a></li>
-        </ul>
-    </nav>
-    <a class="drapeau" href="indexEnglish.html"><img class="drapeauImage" src="images/en-flag.png" alt="Français" /></a>
-</header>
-
 
 <main>
     <section id="presentation">

@@ -1,3 +1,11 @@
+// Sélectionnez l'élément du bouton de la barre de navigation avec la classe navbar-toggle
+const navbarToggle = document.querySelector('.navbar-toggle');
+const navbarDropdown = document.querySelector('.navbar-dropdown');
+navbarToggle.addEventListener('click', function() {
+    // Basculez la visibilité du menu déroulant en ajoutant ou supprimant la classe "active"
+    navbarDropdown.classList.toggle('active');
+});
+
 window.addEventListener('scroll', function() {
     var sections = document.querySelectorAll('section');
     for (var i = 0; i < sections.length; i++) {
@@ -36,3 +44,7 @@ function showSlides() {
 document.addEventListener("DOMContentLoaded", function() {
     showSlides();
 });
+
+
+
+
