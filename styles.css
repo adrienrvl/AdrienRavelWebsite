@@ -21,6 +21,13 @@ body {
     padding: 20px;
 }
 
+.vertical-line {
+  width: 100%;
+  height: 2px; /* Choisissez la hauteur de la ligne en pixels */
+  background-color: black;
+    margin-bottom: 30px;
+}
+
 /* Header */
 header {
     background-color: #333;
@@ -480,4 +487,15 @@ section div h3{
 
 .images {
     text-align: center;
+}
+
+.smallImg{
+     height: 9em; /* Réglez la hauteur souhaitée pour toutes les images*/
+     width: auto; /* Les images conserveront leur largeur d'origine */
+     margin: 10px;
+}
+.smallImg1{
+     height: 13em; /* Réglez la hauteur souhaitée pour toutes les images*/
+     width: auto; /* Les images conserveront leur largeur d'origine */
+     margin: 10px;
 }
