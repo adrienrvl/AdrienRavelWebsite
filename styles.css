@@ -8,9 +8,6 @@
     .mobile-header {
         display: none;
     }
-    .presentation{
-        display: block;
-    }
 }
 /* Styles généraux */
 body {
@@ -176,7 +173,13 @@ main {
     align-items: center;
     margin-bottom: 20px;
 }
-
+@media (min-width: 601px) {
+    .presentation {
+         display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
 .info {
     flex-grow: 1;
 }
