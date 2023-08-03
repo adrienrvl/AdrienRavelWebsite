@@ -8,6 +8,9 @@
     .mobile-header {
         display: none;
     }
+    .presentation{
+        display: block;
+    }
 }
 /* Styles généraux */
 body {
