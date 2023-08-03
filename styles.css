@@ -81,7 +81,7 @@ section {
 
 
 img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -165,6 +165,7 @@ nav ul li:hover::after {
 main {
     padding: 20px;
     margin-top: 110px;
+
 }
 
 .presentation {
@@ -534,8 +535,12 @@ section div h3{
 html,body{
   background-color: white;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Cela assure que l'élément "main" est centré même si le contenu est court */
 }
+
+
 :root{
   --size:100px;/*dimmension jauge*/
   --pi:3.14159265;
