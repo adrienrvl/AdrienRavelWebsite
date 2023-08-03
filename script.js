@@ -45,6 +45,17 @@ document.addEventListener("DOMContentLoaded", function() {
     showSlides();
 });
 
+const fillElement = document.querySelector('.fill');
+const percentageElement = document.querySelector('.percentage');
+const percentageValue = 50; // Modifier cette valeur pour changer le pourcentage affiché sur la jauge
+
+const updateGauge = (percentage) => {
+  const angle = (percentage / 100) * 360;
+  fillElement.style.transform = `rotate(${angle}deg)`;
+  percentageElement.textContent = `${percentage}%`;
+};
+
+updateGauge(percentageValue);
 
 
 
