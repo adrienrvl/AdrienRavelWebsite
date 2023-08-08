@@ -707,9 +707,8 @@ circle{
         max-width:80%;
         height: auto;
         display: flex;
-        justify-content: center; /* Centre l'image horizontalement */
-        align-items: center; /
-
+        justify-content: center;
+        align-items: center;
     }
      .normal2 .content img,
      .normal2 .images img,
@@ -764,20 +763,12 @@ circle{
     .pie{
         margin: auto;
     }
-
     #presentation img{
         display: none;
     }
-
     #presentation .content img{
         display: flex;
     }
-
-
-
-/* Reste de vos styles CSS existants */
-
-
 }
 @media (min-width: 1190px) {
     .a{
