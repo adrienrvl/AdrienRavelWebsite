@@ -46,9 +46,6 @@ header {
     align-items: center;
 }
 
-.drapeau {
-    margin-left: 10px;
-}
 
 .drapeauImage {
     width: 50px;
@@ -728,6 +725,9 @@ circle{
     .navbar-toggle{
         margin-top: 2px;
         margin-left: 10px;
+    }
+    .a{
+        padding-right: 0;
     }
     .a ul {
         margin-left: 30px;
