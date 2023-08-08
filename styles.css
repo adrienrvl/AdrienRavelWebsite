@@ -751,6 +751,21 @@ circle{
         margin-left: 2px;
         margin-right: 2px;
     }
+    .flexxx {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flexxx>* {
+        flex: 1 1 110px;
+    }
+    .pie{
+        margin: auto;
+    }
+
+
+/* Reste de vos styles CSS existants */
+
+
 }
 @media (min-width: 1190px) {
     .a{
@@ -762,7 +777,8 @@ circle{
     .computer-header{
         display: flex;
     }
-    .normal2{
+    .normal2,
+    .deu{
         display: none;
     }
 }
