@@ -406,14 +406,7 @@ h2{
 }
 
 /* Styles spécifiques pour les appareils mobiles */
-@media only screen and (max-width: 600px) {
-    .navbar-links {
-        display: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-}
+
 .images video,
 .images img{
     align-items: center;
@@ -678,13 +671,18 @@ circle{
 .mobile-header{
     display: flex;
 }
+.b ul li{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
 
-@media only screen and (max-width: 601px) {
+@media (max-width: 1190px) {
     #presentation,
     #stage,
     #actualites,
     .normal2,
-    .normal{
+    .normal,
+    .section2{
         display: inline;
     }
     .left-section{
@@ -713,9 +711,11 @@ circle{
         align-items: center; /
 
     }
-     .normal2 .content img{
-        max-width:85%;
-         width: 85%;
+     .normal2 .content img,
+     .normal2 .images img,
+     .normal .images img,
+     .section2 .images img{
+         width: 100%;
         height: auto;
         justify-content: center;
         align-items: center;
@@ -726,7 +726,6 @@ circle{
     .navbar-toggle{
         margin-top: 2px;
         margin-left: 10px;
-
     }
     .a ul {
         margin-left: 30px;
@@ -745,7 +744,7 @@ circle{
         height: auto;
         margin-top: 20px;
     }
-    .normal2 h3{
+    .normal2 . content h3{
         display: none;
     }
     .normal2 .content p{
@@ -753,7 +752,7 @@ circle{
         margin-right: 2px;
     }
 }
-@media (min-width: 601px) {
+@media (min-width: 1190px) {
     .a{
         display: none;
     }
@@ -765,5 +764,14 @@ circle{
     }
     .normal2{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 1190px) {
+    .navbar-links {
+        display: none;
+    }
+    .navbar-toggle {
+        display: block;
     }
 }

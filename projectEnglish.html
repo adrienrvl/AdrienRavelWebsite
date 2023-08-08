@@ -18,27 +18,49 @@
     </script>
 </head>
 <body>
-<header>
-  <div class="left-section">
-    <a href="pageAcceuil.html"><img class="profile-picture" src="images/Capture-removebg-preview.png" alt="Photo de profil"></a>
-    <small>ADRIEN RAVEL</small>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="indexEnglish.html">HOME</a></li>
-      <li><a href="formationEnglish.html">EDUCATION</a></li>
-      <li><a href="experiencesEnglish.html">EXPERIENCES</a></li>
-      <li><a href="projectEnglish.html">PROJECTS</a></li>
-      <li><a href="skillsEnglish.html">SKILLS</a></li>
-    </ul>
-  </nav>
-    <a class="drapeau" href="projets.html" ><img class="drapeauImage" src="images/fr-flag.png" alt="English" /></a>
+<header class="a">
+    <nav class="navbar">
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </div>
+        <ul id="menu" class="navbar-links">
+          <li><a href="indexEnglish.html">HOME</a></li>
+          <li><a href="formationEnglish.html">EDUCATION</a></li>
+          <li><a href="experiencesEnglish.html">EXPERIENCES</a></li>
+          <li><a href="projectEnglish.html">PROJECTS</a></li>
+          <li><a href="skillsEnglish.html">SKILLS</a></li>
+        </ul>
+    </nav>
+     <div class="left-section">
+        <img class="profile-picture" src="images/Capture-removebg-preview.png" alt="Photo de profil">
+        <small>ADRIEN RAVEL</small>
+    </div>
+    <a class="drapeau" href="projets.html"><img class="drapeauImage" src="images/fr-flag.png" alt="English" /></a>
 </header>
+<header class="b">
+    <div class="left-section">
+        <a href="pageAcceuil.html"><img class="profile-picture" src="images/Capture-removebg-preview.png" alt="Photo de profil"></a>
+        <small>ADRIEN RAVEL</small>
+    </div>
+    <nav class="navbar">
+        <ul >
+            <li><a href="indexEnglish.html">HOME</a></li>
+            <li><a href="formationEnglish.html">EDUCATION</a></li>
+            <li><a href="experiencesEnglish.html">EXPERIENCES</a></li>
+            <li><a href="projectEnglish.html">PROJECTS</a></li>
+            <li><a href="skillsEnglish.html">SKILLS</a></li>
+        </ul>
+    </nav>
+    <a class="drapeau" href="projets.html"><img class="drapeauImage" src="images/fr-flag.png" alt="English" /></a>
+</header>
+
 
 <main>
     <h2>Long Term Academic Projects</h2>
     <br>
-    <section>
+    <section class="normal">
         <div class="content">
             <h3 class="title2">ARECE</h3>
             <p>As <strong>Vice-President of Communication and Events</strong> at the ARECE automotive association from June 2021 to May 2023, I actively contributed to the development of an autonomous single-seater software for the Formula Student international competition at Silverstone. I coordinated the association's communication activities and organized key events related to our project. This experience allowed me to develop project management, strategic communication, and event organization skills, while gaining technical expertise in autonomous vehicles.</p>
@@ -48,8 +70,10 @@
             <img class="areceIMG" src="./images/arece.PNG"  alt="Projects">
         </div>
     </section>
+
     <br><br>
-    <section>
+
+    <section class="normal1">
         <div class="images">
         <img src="/images/reulock.jpg" alt="Projects">
         </div>
@@ -58,8 +82,18 @@
             <p>As <strong>Project Leader</strong>, I led a team in designing an innovative electronic locking solution for Réutec's reusable packages. Our solution, powered by a 12V AC supply and a universal plug, eliminated the need for an integrated battery. Users simply scanned the QR-CODE, obtained their code on the platform, plugged the package to the supply, and entered the code to open it. I gained valuable technical skills such as <strong>microcontroller programming</strong>, <strong>Computer-Aided Design</strong> (CAD), and <strong>electronic circuit design</strong>. I also developed project management, organization, teamwork, and time management skills.</p>
         </div>
     </section>
+    <section class="normal2">
+        <div class="content">
+            <h3 class="title2">REULOCK</h3>
+            <p>As <strong>Project Leader</strong>, I led a team in designing an innovative electronic locking solution for Réutec's reusable packages. Our solution, powered by a 12V AC supply and a universal plug, eliminated the need for an integrated battery. Users simply scanned the QR-CODE, obtained their code on the platform, plugged the package to the supply, and entered the code to open it. I gained valuable technical skills such as <strong>microcontroller programming</strong>, <strong>Computer-Aided Design</strong> (CAD), and <strong>electronic circuit design</strong>. I also developed project management, organization, teamwork, and time management skills.</p>
+        </div>
+        <div class="images">
+        <img src="/images/reulock.jpg" alt="Projects">
+        </div>
+    </section>
+
   <br><br>
-  <section>
+  <section class="normal">
       <div class="content">
           <h3 class="title2">ARES</h3>
           <p>I mainly worked on the <strong>Artificial Intelligence</strong> part of the project in my team of 7 members. Our goal was to create a robot capable of picking up and moving cubes to specific locations. I was responsible for implementing the A* algorithm for the robot's movement. Using this algorithm, I developed an effective strategy for the robot to plan its movements and optimize cube collection in the end-of-year competition. Additionally, I contributed to other aspects of the project such as <strong>robot assembly</strong>, <strong>modeling some parts</strong>, <strong>reading received images</strong>, and <strong>communicating with the server</strong>.</p>
@@ -69,7 +103,7 @@
       </div>
   </section>
   <br><br>
-  <section>
+  <section class="normal1">
       <div class="images">
           <a><img class="wulliIMG" src="./images/wulli.png" alt="Projects"></a>
       </div>
@@ -78,6 +112,17 @@
           <p>
               In my first year at ECE, I worked in a team on a project focused on future challenges. We chose to address the issue of overpackaging and developed the solution WULLI. It is an innovative application aimed at measuring the overpackaging rate of a product. Using the scan function, the application assigns an overpackaging score to the analyzed product. I actively contributed to all phases of the project, from conception to realization. This experience allowed me to develop project management, teamwork, and application development skills to address current societal needs.</p>
       </div>
+  </section>
+   <section class="normal2">
+       <div class="content">
+          <h3 class="title2">WULLI</h3>
+          <p>
+              In my first year at ECE, I worked in a team on a project focused on future challenges. We chose to address the issue of overpackaging and developed the solution WULLI. It is an innovative application aimed at measuring the overpackaging rate of a product. Using the scan function, the application assigns an overpackaging score to the analyzed product. I actively contributed to all phases of the project, from conception to realization. This experience allowed me to develop project management, teamwork, and application development skills to address current societal needs.</p>
+      </div>
+      <div class="images">
+          <a><img class="wulliIMG" src="./images/wulli.png" alt="Projects"></a>
+      </div>
+
   </section>
 
   <br><br><br>
