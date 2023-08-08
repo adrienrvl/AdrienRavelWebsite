@@ -21,12 +21,18 @@
 }
 
 #entry-title {
-    font-size: 48px;
+    font-size: 340%;
     margin-bottom: 20px;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 5s steps(40) forwards;
     text-align: center;
+}
+
+@media only screen and (max-width: 601px) {
+    #entry-title{
+        font-size: 20px;
+    }
 }
 
 @keyframes typing {

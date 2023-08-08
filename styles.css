@@ -682,9 +682,11 @@ circle{
 @media only screen and (max-width: 601px) {
     #presentation,
     #stage,
-    #actualites{
+    #actualites,
+    .normal2{
         display: inline;
     }
+
     #carousel{
         display: none;
        width: 0;
@@ -698,6 +700,15 @@ circle{
         justify-content: center; /* Centre l'image horizontalement */
         align-items: center; /
 
+
+    }
+     .normal2 .content img{
+        max-width:85%;
+         width: 85%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
     }
     .b{
         display: none;
@@ -709,6 +720,10 @@ circle{
     .a ul {
         margin-left: 30px;
     }
+    .normal1{
+        display: none
+    }
+
 }
 @media (min-width: 601px) {
     .a{
@@ -719,5 +734,8 @@ circle{
     }
     .computer-header{
         display: flex;
+    }
+    .normal2{
+        display: none;
     }
 }
