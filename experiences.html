@@ -20,13 +20,34 @@
 </head>
 <body>
 
-<header>
+<header class="a">
+    <nav class="navbar">
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+        </div>
+        <ul id="menu" class="navbar-links">
+            <li><a href="pageAcceuil.html">ACCEUIL</a></li>
+            <li><a href="formation.html">FORMATIONS</a></li>
+            <li><a href="experiences.html">EXPERIENCES</a></li>
+            <li><a href="projets.html">PROJETS</a></li>
+            <li><a href="skills.html">COMPETENCES</a></li>
+        </ul>
+    </nav>
+     <div class="left-section">
+        <a href="pageAcceuil.html"><img class="profile-picture" src="images/Capture-removebg-preview.png" alt="Photo de profil"></a>
+        <small>ADRIEN RAVEL</small>
+    </div>
+    <a class="drapeau" href="experiencesEnglish.html"><img class="drapeauImage" src="images/en-flag.png" alt="Français" /></a>
+</header>
+<header class="b">
     <div class="left-section">
         <a href="pageAcceuil.html"><img class="profile-picture" src="images/Capture-removebg-preview.png" alt="Photo de profil"></a>
         <small>ADRIEN RAVEL</small>
     </div>
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <ul >
             <li><a href="pageAcceuil.html">ACCEUIL</a></li>
             <li><a href="formation.html">FORMATIONS</a></li>
             <li><a href="experiences.html">EXPERIENCES</a></li>
@@ -36,9 +57,10 @@
     </nav>
     <a class="drapeau" href="experiencesEnglish.html"><img class="drapeauImage" src="images/en-flag.png" alt="Français" /></a>
 </header>
+
 <main class="experience">
     <h2 class= "title">Expériences Professionnelles</h2>
-    <section>
+    <section class="normal1">
         <div class="content">
             <h3 class= "title2">SOMFY</h3>
             <p class="annee"><strong>2023:</strong> Stage : Ingénieur Software</p>
@@ -54,7 +76,7 @@
         </div>
 
     </section>
-    <section>
+    <section class="normal1">
         <div class="content">
             <h3 class= "title2">Gauthier Fils</h3>
             <p class="annee"><strong>2021:</strong> Stage : Analyse de l'organisation d'une entreprise</p>
@@ -69,7 +91,7 @@
         </div>
 
     </section>
-    <section>
+    <section class="normal1">
         <div class="content">
             <h3 class= "title2">OMERIN</h3>
             <p class="annee"><strong>2019:</strong> Emploi estival : Vidange de machines Industriels</p>
@@ -79,6 +101,61 @@
             <h3 class= "title2">INTERIM</h3>
             <p class="annee"><strong>2018:</strong> Expérience en agence d'intérim à mes 17 ans</p>
             <p class="paragraphe"><em>À mes 17 ans, j'ai eu une première expérience du monde du travail grâce à mon emploi en agence d'intérim. J'ai travaillé dans différentes usines avec des missions généralement de trois jours. Cette expérience m'a permis de m'adapter rapidement à de nouveaux environnements, de suivre des consignes précises et de collaborer efficacement en équipe. Ces courtes missions m'ont apporté une première immersion dans le monde professionnel, renforçant ma résilience et ma volonté de poursuivre mes études pour développer mes compétences et ouvrir de nouvelles opportunités.</em></p>
+        </div>
+    </section>
+    <section class="normal2">
+        <div class="content">
+            <h3 class= "title2">SOMFY</h3>
+            <img src="images/6.png" alt="Formation" class="Image2">
+
+            <p class="annee"><strong>2023:</strong> Stage : Ingénieur Software</p>
+            <p class="paragraphe"><em>En tant qu'ingénieur Software lors de mon stage de cinq mois au sein de l'entreprise SOMFY à Cluses, j'ai eu la responsabilité de travailler de manière autonome sur le développement d'un logiciel passerelle. Mon objectif principal était de simplifier l'analyse des retours-moteurs après leur utilisation. J'ai mis en œuvre mes compétences en programmation (Python, C, C++, HTML), afin de trouver les solutions les plus appropriées et simples pour créer un logiciel simple d'utilisation et efficace. Cette expérience m'a permis d'approfondir mes connaissances en développement logiciel, d'améliorer mes compétences en organisation et de renforcer ma maîtrise des langages de programmation.</em></p>
+            <br>
+        </div>
+        <div class="content">
+            <h3 class= "title2">THALES LAS FRANCE</h3>
+            <img src="images/7.png" alt="Formation" class="Image2">
+            <p class="annee"><strong>2022:</strong> Stage : Manipulation de base de données</p>
+            <p class="paragraphe"><em>
+                En tant que stagiaire chez THALES LAS France pendant deux mois, j'ai eu l'opportunité de travailler à Rungis, en Île-de-France. Mes principales responsabilités ont consisté à saisir des métadonnées liées aux livraisons documentaires dans la base de données de l'entreprise. J'ai également participé activement à l'actualisation du plan de pilotage. Au cours de cette expérience, j'ai pu développer mes compétences en analyse de données, et en compréhension de l'organisation d'un grand groupe. J'ai également eu l'occasion de démontrer mon autonomie dans la réalisation des tâches qui m'ont été confiées. Ce stage m'a permis d'acquérir une expérience précieuse et de renforcer mes compétences professionnelles.</em></p>
+            <br>
+        </div>
+
+    </section>
+    <section class="normal2">
+        <div class="content">
+            <h3 class= "title2">Gauthier Fils</h3>
+            <img src="images/8.png" alt="Formation" class="Image2">
+
+            <p class="annee"><strong>2021:</strong> Stage : Analyse de l'organisation d'une entreprise</p>
+            <p class="paragraphe"><em>Lors de mon stage de cinq semaines chez Gauthier Fils, j'ai étudié l'entreprise et ses documents clés, tout en développant un outil permettant de retracer l'organisation complète, de la demande client à la commercialisation des produits. Ce stage m'a permis de développer mes compétences en réflexion, analyse et d'appliquer mes connaissances théoriques sur l'organisation des entreprises. J'ai ainsi acquis une meilleure compréhension du fonctionnement global d'une entreprise et j'ai pu mettre en pratique mes compétences académiques dans un contexte réel.</em></p>
+            <br>
+        </div>
+        <div class="content">
+            <h3 class= "title2">Trésorerie Publique</h3>
+            <img src="images/9.png" alt="Formation" class="Image2">
+
+            <p class="annee"><strong> 2020:</strong> Emploi estival : Archivage de documents confidentiels</p>
+            <p class="paragraphe"><em>Lors de mon job d'été d'un mois à la Trésorerie Publique d'Ambert, j'ai trié et organisé des documents au sein des archives. Cette expérience m'a permis de développer des compétences en gestion méticuleuse, en organisation et en attention aux détails. J'ai démontré ma capacité à travailler de manière autonome et à être responsable dans l'exécution des tâches qui m'ont été confiées. Ce poste a renforcé ma rigueur et mon sens de l'organisation. </em></p>
+            <br>
+        </div>
+
+    </section>
+    <section class="normal2">
+        <div class="content">
+            <h3 class= "title2">OMERIN</h3>
+            <img src="images/10.png" alt="Formation" class="Image2">
+
+            <p class="annee"><strong>2019:</strong> Emploi estival : Vidange de machines Industriels</p>
+            <p class="paragraphe"><em>Chez Omerin, j'ai occupé un emploi estival au sein du service maintenance où j'ai réalisé des vidanges de machines industrielles, notamment des métiers à tresser. Cette expérience m'a permis de découvrir concrètement le monde du travail et a suscité en moi une réelle motivation à poursuivre de longues études. J'ai développé ma rigueur et ma précision en suivant les procédures de maintenance avec soin. De plus, cette expérience m'a également enseigné l'importance du travail d'équipe . </em></p>
+        </div>
+        <div class="content">
+            <h3 class= "title2">INTERIM</h3>
+            <img src="images/11.png" alt="Formation" class="Image2">
+
+            <p class="annee"><strong>2018:</strong> Expérience en agence d'intérim à mes 17 ans</p>
+            <p class="paragraphe"><em>À mes 17 ans, j'ai eu une première expérience du monde du travail grâce à mon emploi en agence d'intérim. J'ai travaillé dans différentes usines avec des missions généralement de trois jours. Cette expérience m'a permis de m'adapter rapidement à de nouveaux environnements, de suivre des consignes précises et de collaborer efficacement en équipe. Ces courtes missions m'ont apporté une première immersion dans le monde professionnel, renforçant ma résilience et ma volonté de poursuivre mes études pour développer mes compétences et ouvrir de nouvelles opportunités.</em></p>
+            <br><br><br>
         </div>
     </section>
     <div class="images3">

@@ -683,7 +683,8 @@ circle{
     #presentation,
     #stage,
     #actualites,
-    .normal2{
+    .normal2,
+    .normal{
         display: inline;
     }
 
@@ -700,7 +701,6 @@ circle{
         justify-content: center; /* Centre l'image horizontalement */
         align-items: center; /
 
-
     }
      .normal2 .content img{
         max-width:85%;
@@ -708,7 +708,6 @@ circle{
         height: auto;
         justify-content: center;
         align-items: center;
-        margin: 10px;
     }
     .b{
         display: none;
@@ -723,7 +722,17 @@ circle{
     .normal1{
         display: none
     }
-
+    .images3{
+        display: none;
+    }
+    .normal2 .content .Image2{
+       max-width:40%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .normal2 h3{
+        display: none;
+    }
 }
 @media (min-width: 601px) {
     .a{
