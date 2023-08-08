@@ -720,6 +720,9 @@ circle{
         justify-content: center;
         align-items: center;
     }
+     .normal2 .content .Image1{
+         width: 600px;
+     }
     .b{
         display: none;
     }
@@ -744,7 +747,7 @@ circle{
         height: auto;
         margin-top: 20px;
     }
-    .normal2 . content h3{
+    .normal2 .content h3{
         display: none;
     }
     .normal2 .content p{
@@ -761,6 +764,13 @@ circle{
     .pie{
         margin: auto;
     }
+    #presentation .imageAcceuil{
+        display: none;
+    }
+    #presentation #imageAAA{
+        display: inline;
+    }
+
 
 
 /* Reste de vos styles CSS existants */
@@ -779,6 +789,12 @@ circle{
     }
     .normal2,
     .deu{
+        display: none;
+    }
+    #carousel2{
+        display: none;
+    }
+    #presentation .content img{
         display: none;
     }
 }
