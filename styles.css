@@ -764,11 +764,13 @@ circle{
     .pie{
         margin: auto;
     }
+
     #presentation img{
         display: none;
     }
-    #presentation #imageAAA{
-        display: inline;
+
+    #presentation .content img{
+        display: flex;
     }
 
 
