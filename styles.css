@@ -687,7 +687,18 @@ circle{
     .normal{
         display: inline;
     }
-
+    .left-section{
+        align-items: center;
+    }
+    .left-section small{
+        margin: 2px;
+    }
+    .left-section a img{
+        margin: 1px;
+    }
+    .left-section a{
+        display: inline;
+    }
     #carousel{
         display: none;
        width: 0;
@@ -713,11 +724,15 @@ circle{
         display: none;
     }
     .navbar-toggle{
-        margin-top: 10px;
-        margin-left: 20px;
+        margin-top: 2px;
+        margin-left: 10px;
+
     }
     .a ul {
         margin-left: 30px;
+    }
+    .a ul li{
+        margin: 3px;
     }
     .normal1{
         display: none
@@ -732,6 +747,10 @@ circle{
     }
     .normal2 h3{
         display: none;
+    }
+    .normal2 .content p{
+        margin-left: 2px;
+        margin-right: 2px;
     }
 }
 @media (min-width: 601px) {
